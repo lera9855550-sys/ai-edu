@@ -468,6 +468,14 @@ body{background:#000}
 .uni .fr .card,.uni .fr .tech.card{padding-top:clamp(10px,1.8vh,20px);padding-bottom:clamp(10px,1.8vh,20px)}
 .uni .by{display:block;font-weight:700;font-size:.62em;color:var(--sun);letter-spacing:.02em}
 </style>
+<style>
+.uni4 .g4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,2.6vh,30px) clamp(14px,2.4vw,32px)}
+.uni4 .big4{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:clamp(10px,2.4vh,26px);min-height:clamp(120px,24vh,230px);padding:clamp(16px,2.4vw,32px);border:0;border-radius:6px;box-shadow:8px 8px 0 var(--paper);color:#000}
+.uni4 .big4:nth-child(odd){rotate:-1deg}.uni4 .big4:nth-child(even){rotate:1deg}
+.uni4 .big4 .n{font-weight:800;font-size:clamp(1rem,1.8vw,1.5rem);opacity:.55}
+.uni4 .big4 .t{font-weight:800;line-height:1.05;font-size:clamp(1.6rem,4.2vw,3.6rem)}
+@media(max-width:640px){.uni4 .g4{grid-template-columns:1fr}.uni4 .big4{min-height:0}.uni4 .cutw{display:none}}
+</style>
 <div class="stage" id="stage">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <filter id="cut" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
@@ -779,20 +787,20 @@ body{background:#000}
     </section>
 
     <!-- 7b -->
-    <section class="slide merged fears uni" data-accent="#FADA3C" data-accent2="#E968D9">
-      <div class="collage" aria-hidden="true"><div class="cutw " style="--x:91%;--y:9%;--w:17vmin;--r:6deg;--d:0"><svg viewBox="0 0 200 200" aria-hidden="true"><g filter="url(#cut)">
+    <section class="slide uni4" data-accent="#FADA3C" data-accent2="#E968D9">
+      <div class="collage" aria-hidden="true"><div class="cutw " style="--x:91%;--y:10%;--w:17vmin;--r:6deg;--d:0"><svg viewBox="0 0 200 200" aria-hidden="true"><g filter="url(#cut)">
 <path class="f-ink ol" d="M48 100V140Q100 172 152 140V100L100 122Z"/>
 <path class="ol nofill" d="M100 78L170 94V140"/>
 <path class="f-ink ol" d="M100 34L190 76L100 118L10 76Z"/>
 <circle class="f-pink ol thin" cx="100" cy="76" r="9"/>
 <rect class="f-sun ol thin" x="162" y="138" width="16" height="36" rx="5"/></g></svg></div></div>
       <div class="inner">
-        <h2 class="h2 rise" style="--i:1">Чему должен <span class="pill pill-pink">учить</span> университет</h2>
-        <div class="fr">
-          <div class="tech card c-sun rise" style="--i:2">Спорить и сомневаться</div><div class="card ghost rise" style="--i:2">Формировать собственное мнение</div>
-          <div class="tech card c-pink rise" style="--i:3">Проверять ответы</div><div class="card ghost rise" style="--i:3">Ответ ещё не значит понимание, его нужно проверять</div>
-          <div class="tech card c-sun rise" style="--i:4">Понимать, а не знать</div><div class="card ghost rise" style="--i:4">Знать не просто ответы, а почему они правильные</div>
-          <div class="tech card c-pink rise" style="--i:5">Думать медленно</div><div class="card ghost rise" style="--i:5">Не спешить и позволять себе не знать сразу</div>
+        <h2 class="h2 rise" style="--i:1">Чему учить в эпоху <span class="pill pill-pink">ИИ</span></h2>
+        <div class="g4">
+          <div class="card c-sun big4 rise" style="--i:2"><span class="n">01</span><span class="t">Спорить и сомневаться</span></div>
+          <div class="card c-pink big4 rise" style="--i:3"><span class="n">02</span><span class="t">Проверять ответы</span></div>
+          <div class="card c-pink big4 rise" style="--i:4"><span class="n">03</span><span class="t">Понимать, а не знать</span></div>
+          <div class="card c-sun big4 rise" style="--i:5"><span class="n">04</span><span class="t">Думать медленно</span></div>
         </div>
       </div>
     </section>
