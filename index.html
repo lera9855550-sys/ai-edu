@@ -476,6 +476,10 @@ body{background:#000}
 .uni4 .big4 .t{font-weight:800;line-height:1.05;font-size:clamp(1.6rem,4.2vw,3.6rem)}
 @media(max-width:640px){.uni4 .g4{grid-template-columns:1fr}.uni4 .big4{min-height:0}.uni4 .cutw{display:none}}
 </style>
+<style>
+.slide.active .rise[data-s]{animation-delay:0ms}
+.slide .sh{visibility:hidden;animation:none!important;opacity:0}
+</style>
 <div class="stage" id="stage">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <filter id="cut" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
@@ -571,7 +575,7 @@ body{background:#000}
     <!-- 3 -->
     
 
-    <section class="slide merged fears" data-accent="#FADA3C" data-accent2="#E968D9">
+    <section class="slide stepped merged fears" data-accent="#FADA3C" data-accent2="#E968D9">
       <div class="collage" aria-hidden="true"><div class="cutw " style="--x:90%;--y:14%;--w:22vmin;--r:6deg;--d:0"><svg viewBox="0 0 200 200" aria-hidden="true"><g filter="url(#cut)">
 <path class="f-white ol" d="M100 56C80 40 40 38 12 46V150C40 142 80 144 100 160Z"/>
 <path class="f-white ol" d="M100 56C120 40 160 38 188 46V150C160 142 120 144 100 160Z"/>
@@ -590,15 +594,15 @@ body{background:#000}
       <div class="inner">
         <h2 class="h2 rise" style="--i:1">Каждый раз — <span class="pill pill-pink">одна и та же</span> паника</h2>
         <div class="fr">
-          <div class="tech card c-sun rise" style="--i:2">Книги, 16 век</div><div class="card ghost rise" style="--i:2">«Знания станут поверхностными»</div>
-          <div class="tech card c-pink rise" style="--i:3">Калькулятор</div><div class="card ghost rise" style="--i:3">«Дети разучатся считать»</div>
-          <div class="tech card c-sun rise" style="--i:4">Google</div><div class="card ghost rise" style="--i:4">«Зачем учить, если можно загуглить»</div>
+          <div data-s="1" class="tech card c-sun rise" style="--i:2">Книги, 16 век</div><div data-s="1" class="card ghost rise" style="--i:2">«Знания станут поверхностными»</div>
+          <div data-s="2" class="tech card c-pink rise" style="--i:3">Калькулятор</div><div data-s="2" class="card ghost rise" style="--i:3">«Дети разучатся считать»</div>
+          <div data-s="3" class="tech card c-sun rise" style="--i:4">Google</div><div data-s="3" class="card ghost rise" style="--i:4">«Зачем учить, если можно загуглить»</div>
         </div>
       </div>
     </section>
 
     <!-- 3b -->
-    <section class="slide merged" data-accent="#E968D9" data-accent2="#FADA3C">
+    <section class="slide stepped merged" data-accent="#E968D9" data-accent2="#FADA3C">
       <div class="collage" aria-hidden="true"><div class="cutw " style="--x:93%;--y:11%;--w:20vmin;--r:-5deg;--d:0"><svg viewBox="0 0 200 200" aria-hidden="true"><g filter="url(#cut)">
 <path class="ol nofill" d="M100 36V162" style="stroke-width:7"/>
 <rect class="f-ink ol" x="58" y="160" width="84" height="20" rx="5"/>
@@ -623,15 +627,15 @@ body{background:#000}
         <h2 class="h2 rise" style="--i:1">Что мы <span class="pill pill-pink">теряем</span> — и получаем</h2>
                 <div class="lg">
           <div class="hd"></div><div class="hd rise" style="--i:1">Потеряли</div><div class="hd rise" style="--i:1">Получили</div>
-          <div class="tech rise" style="--i:2">Письменность</div>
-          <div class="card ghost rise" style="--i:2">Память наизусть</div>
-          <div class="card c-sun rise" style="--i:2">Знания копятся поколениями</div>
-          <div class="tech rise" style="--i:3">Калькулятор</div>
-          <div class="card ghost rise" style="--i:3">Беглый устный счёт</div>
-          <div class="card c-sun rise" style="--i:3">Сложные задачи вместо арифметики</div>
-          <div class="tech rise" style="--i:4">Google и GPS</div>
-          <div class="card ghost rise" style="--i:4">Помним где, а не что; ориентирование</div>
-          <div class="card c-sun rise" style="--i:4">Любой факт за секунду</div>
+          <div data-s="1" class="tech rise" style="--i:2">Письменность</div>
+          <div data-s="1" class="card ghost rise" style="--i:2">Память наизусть</div>
+          <div data-s="1" class="card c-sun rise" style="--i:2">Знания копятся поколениями</div>
+          <div data-s="2" class="tech rise" style="--i:3">Калькулятор</div>
+          <div data-s="2" class="card ghost rise" style="--i:3">Беглый устный счёт</div>
+          <div data-s="2" class="card c-sun rise" style="--i:3">Сложные задачи вместо арифметики</div>
+          <div data-s="3" class="tech rise" style="--i:4">Google и GPS</div>
+          <div data-s="3" class="card ghost rise" style="--i:4">Помним где, а не что; ориентирование</div>
+          <div data-s="3" class="card c-sun rise" style="--i:4">Любой факт за секунду</div>
         </div>
       </div>
     </section>
@@ -747,7 +751,7 @@ body{background:#000}
     </section>
 
     <!-- 6 -->
-    <section class="slide" data-accent="#E968D9" data-accent2="#FADA3C">
+    <section class="slide stepped" data-accent="#E968D9" data-accent2="#FADA3C">
       <div class="collage" aria-hidden="true"><div class="cutw " style="--x:87%;--y:16%;--w:27vmin;--r:8deg;--d:0"><svg viewBox="0 0 200 200" aria-hidden="true"><g filter="url(#cut)">
 <path class="ol nofill thin" d="M18 44L34 54M182 44L166 54M8 92L26 92M192 92L174 92"/>
 <path class="f-sun ol" d="M100 14C58 14 36 44 36 76C36 100 52 112 62 128V146H138V128C148 112 164 100 164 76C164 44 142 14 100 14Z"/>
@@ -766,19 +770,19 @@ body{background:#000}
       <div class="inner">
         <h2 class="h2 rise" style="--i:1">Что <span class="pill pill-sky">вместо</span> запретов</h2>
         <div class="grid4">
-          <article class="card c-mint tile rise" style="--i:2">
+          <article data-s="1" class="card c-mint tile rise" style="--i:2">
             <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="14" y="5" width="12" height="20" rx="6"/><path d="M8 19a12 12 0 0 0 24 0M20 31v5M13 36h14"/></svg>
             <div><h3>Устные защиты</h3><p>Объясни свою работу.</p></div>
           </article>
-          <article class="card c-pink tile rise" style="--i:3">
+          <article data-s="2" class="card c-pink tile rise" style="--i:3">
             <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l15 8v16L20 36 5 28V12z"/><path d="M5 12l15 8 15-8M20 20v16"/></svg>
             <div><h3>Проекты</h3><p>Результат нельзя скопировать.</p></div>
           </article>
-          <article class="card c-sky tile rise" style="--i:4">
+          <article data-s="3" class="card c-sky tile rise" style="--i:4">
             <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 34h10v-9h10v-9h10V6"/></svg>
             <div><h3>Оценка процесса</h3><p>Черновики и ход мысли.</p></div>
           </article>
-          <article class="card c-sun tile rise" style="--i:5">
+          <article data-s="4" class="card c-sun tile rise" style="--i:5">
             <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="7" width="30" height="24" rx="5"/><path d="M12 19l6 6 11-12"/></svg>
             <div><h3>Открытые правила</h3><p>ИИ можно — покажи, как.</p></div>
           </article>
@@ -787,7 +791,7 @@ body{background:#000}
     </section>
 
     <!-- 7b -->
-    <section class="slide uni4" data-accent="#FADA3C" data-accent2="#E968D9">
+    <section class="slide stepped uni4" data-accent="#FADA3C" data-accent2="#E968D9">
       <div class="collage" aria-hidden="true"><div class="cutw " style="--x:91%;--y:10%;--w:17vmin;--r:6deg;--d:0"><svg viewBox="0 0 200 200" aria-hidden="true"><g filter="url(#cut)">
 <path class="f-ink ol" d="M48 100V140Q100 172 152 140V100L100 122Z"/>
 <path class="ol nofill" d="M100 78L170 94V140"/>
@@ -797,10 +801,10 @@ body{background:#000}
       <div class="inner">
         <h2 class="h2 rise" style="--i:1">Чему учить в эпоху <span class="pill pill-pink">ИИ</span></h2>
         <div class="g4">
-          <div class="card c-sun big4 rise" style="--i:2"><span class="n">01</span><span class="t">Спорить и сомневаться</span></div>
-          <div class="card c-pink big4 rise" style="--i:3"><span class="n">02</span><span class="t">Проверять ответы</span></div>
-          <div class="card c-pink big4 rise" style="--i:4"><span class="n">03</span><span class="t">Понимать, а не знать</span></div>
-          <div class="card c-sun big4 rise" style="--i:5"><span class="n">04</span><span class="t">Думать медленно</span></div>
+          <div data-s="1" class="card c-sun big4 rise" style="--i:2"><span class="n">01</span><span class="t">Спорить и сомневаться</span></div>
+          <div data-s="2" class="card c-pink big4 rise" style="--i:3"><span class="n">02</span><span class="t">Проверять ответы</span></div>
+          <div data-s="3" class="card c-pink big4 rise" style="--i:4"><span class="n">03</span><span class="t">Понимать, а не знать</span></div>
+          <div data-s="4" class="card c-sun big4 rise" style="--i:5"><span class="n">04</span><span class="t">Думать медленно</span></div>
         </div>
       </div>
     </section>
@@ -878,7 +882,10 @@ const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const root=document.documentElement;
 const stage=$('#stage'), slides=$$('.slide'), N=slides.length;
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
-let idx=-1, stopConfetti=null;
+let idx=-1, stopConfetti=null, step=0, maxStep=0;
+function applySteps(){slides[idx].querySelectorAll('[data-s]').forEach(e=>e.classList.toggle('sh',+e.dataset.s>step));}
+function nextStep(){ if(step<maxStep){step++;applySteps();} else go(idx+1); }
+function prevStep(){ if(step>0){step--;applySteps();} else go(idx-1); }
 
 
 $$('.h1,.h2').forEach(h=>{const sp=document.createElement('span'); sp.className='hl'; while(h.firstChild) sp.appendChild(h.firstChild); h.appendChild(sp);});
@@ -933,6 +940,7 @@ function go(n){
   if(stopConfetti){stopConfetti(); stopConfetti=null;}
   slides.forEach((s,i)=>{s.classList.toggle('active',i===n); s.classList.toggle('past',i<n); s.setAttribute('aria-hidden',i===n?'false':'true'); s.scrollTop=0;});
   pipEls.forEach((p,i)=>p.classList.toggle('on',i===n));
+  maxStep=Math.max(0,...[...slides[n].querySelectorAll('[data-s]')].map(e=>+e.dataset.s)); step=(prev>n)?maxStep:0; applySteps();
   const a=slides[n].dataset;
   root.style.setProperty('--accent',a.accent); root.style.setProperty('--accent2',a.accent2);
   $('#count').textContent=String(n+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');
@@ -941,8 +949,8 @@ function go(n){
   if(last) setTimeout(()=>{if(idx===N-1) confetti();},900);
 }
 
-$('#prev').addEventListener('click',()=>go(idx-1));
-$('#next').addEventListener('click',()=>go(idx+1));
+$('#prev').addEventListener('click',prevStep);
+$('#next').addEventListener('click',nextStep);
 const fs=$('#fs');
 if(!root.requestFullscreen) fs.hidden=true;
 function toggleFs(){
@@ -953,8 +961,8 @@ fs.addEventListener('click',toggleFs);
 addEventListener('keydown',e=>{
   if(e.metaKey||e.ctrlKey||e.altKey) return;
   const k=e.key, onBtn=e.target.closest&&e.target.closest('button');
-  if(k==='ArrowRight'||k==='PageDown'||(k===' '&&!onBtn)){e.preventDefault(); go(idx+1);}
-  else if(k==='ArrowLeft'||k==='PageUp'){e.preventDefault(); go(idx-1);}
+  if(k==='ArrowRight'||k==='PageDown'||(k===' '&&!onBtn)){e.preventDefault(); nextStep();}
+  else if(k==='ArrowLeft'||k==='PageUp'){e.preventDefault(); prevStep();}
   else if(k==='Home'){go(0);}
   else if(k==='End'){go(N-1);}
   else if(k==='f'||k==='F'||k==='а'||k==='А'){toggleFs();}
@@ -965,7 +973,7 @@ const area=$('#slides');
 area.addEventListener('touchstart',e=>{tx=e.touches[0].clientX; ty=e.touches[0].clientY;},{passive:true});
 area.addEventListener('touchend',e=>{
   const dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty;
-  if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5) go(dx<0?idx+1:idx-1);
+  if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5) dx<0?nextStep():prevStep();
 },{passive:true});
 
 go(0);
