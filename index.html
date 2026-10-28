@@ -463,7 +463,9 @@ body{background:#000}
 @media(max-width:640px){.fears .fr{grid-template-columns:1fr}}
 </style>
 <style>
-.uni .fr .card.ghost{flex-direction:column;align-items:flex-start;justify-content:center;gap:.5em;font-size:clamp(.95rem,1.8vw,1.5rem)}
+.uni .fr{grid-auto-rows:1fr}
+.uni .fr .card.ghost{font-size:clamp(1rem,2vw,1.6rem)}
+.uni .fr .card,.uni .fr .tech.card{padding-top:clamp(10px,1.8vh,20px);padding-bottom:clamp(10px,1.8vh,20px)}
 .uni .by{display:block;font-weight:700;font-size:.62em;color:var(--sun);letter-spacing:.02em}
 </style>
 <div class="stage" id="stage">
@@ -787,9 +789,10 @@ body{background:#000}
       <div class="inner">
         <h2 class="h2 rise" style="--i:1">Чему должен <span class="pill pill-pink">учить</span> университет</h2>
         <div class="fr">
-          <div class="tech card c-sun rise" style="--i:2">Спорить и сомневаться</div><div class="card ghost rise" style="--i:2">«Спорить, сомневаться и формировать собственное мнение»<small class="by">Анна Шпак, студентка</small></div>
-          <div class="tech card c-pink rise" style="--i:3">Проверять ответы</div><div class="card ghost rise" style="--i:3">«Получить ответ — не значит понять. Важно уметь его проверить»<small class="by">Анжеліка Іваницька, студентка</small></div>
-          <div class="tech card c-sun rise" style="--i:4">Понимать, а не знать</div><div class="card ghost rise" style="--i:4">«Не просто знать ответы, а понимать, почему они правильны»<small class="by">Олена Сироїд, преподавательница</small></div>
+          <div class="tech card c-sun rise" style="--i:2">Спорить и сомневаться</div><div class="card ghost rise" style="--i:2">Формировать собственное мнение</div>
+          <div class="tech card c-pink rise" style="--i:3">Проверять ответы</div><div class="card ghost rise" style="--i:3">Ответ ещё не значит понимание, его нужно проверять</div>
+          <div class="tech card c-sun rise" style="--i:4">Понимать, а не знать</div><div class="card ghost rise" style="--i:4">Знать не просто ответы, а почему они правильные</div>
+          <div class="tech card c-pink rise" style="--i:5">Думать медленно</div><div class="card ghost rise" style="--i:5">Не спешить и позволять себе не знать сразу</div>
         </div>
       </div>
     </section>
